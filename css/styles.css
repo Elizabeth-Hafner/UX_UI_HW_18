@@ -2,3 +2,125 @@
    width: 200px;
    height: auto;
 }
+
+.header {
+   height: 40px;
+   background-color:#56CCF2;
+   text-transform:uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.pageTitle {
+   float:left;
+   padding: 10px 20px;
+}
+
+.navigation{
+   display: flex;
+   justify-content: flex-end;
+}
+.navitem{
+   padding: 10px 20px;
+}
+
+body{
+   margin: 0;
+}
+
+h1{
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 24px;
+}
+
+.recipeContainer{
+   margin: 24px;
+}
+
+.recipe{
+   border: 1px;
+   border-color: lightgrey;
+   border-style: solid;
+   display: flex;
+   margin: 0px 15px 15px 0px;
+  
+}
+
+.recipeBox{
+   display: flex;
+   margin: auto;
+   justify-content:flex-start;
+   align-content: space-between;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipeContent{
+   margin: 24px;
+   max-width: 300px;
+}
+
+button{
+   background-color: #F2C94C;
+   width: 100%;
+   font-size: 14px;
+   text-transform: uppercase;
+   border-radius: 8px;
+   border: 0;
+   height: 30px;
+   margin-top: 24px;
+}
+
+a{
+   color:black;
+   text-decoration: none;
+   padding: 0 8px;
+   letter-spacing: 1px;
+}
+
+.footer{
+   background-color: #DDF5FC;
+   height: 40px;
+   display: flex;
+   justify-content:space-evenly;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.link{
+   font-weight: bold;
+   text-decoration:underline;
+}
+
+
+/* To be honest I have no clue if half of what I wrote 
+in this code actually works or not but my intention was 
+to change the color of the background, recipe cards, and recipe names; 
+and try and scale down the sizes of the cards so they would fit better on the smaller screen
+(I'm having an issue getting the spacing within the cards to not be so much and 
+for some bizzare reason the button in the tuna card is at a different position than the other buttons!)*/
+@media only screen and (max-width: 768px){
+   .recipeContent{
+      margin: 10px;
+      max-width: 300px;
+      justify-content: space-evenly;
+   }
+   .recipeImage {
+      width: 100px;
+      height: auto;
+      object-fit: scale-down;
+   }
+   .recipeContainer{
+      margin: 0;
+   }
+   .recipe{
+      background-color:white;
+   }
+   h3{
+      color:teal;
+   }
+   body{
+      background-color:lavenderblush;
+   }
+   .navitem{
+      padding: 10px 10px;
+      font-size:smaller;
+   }
+}
